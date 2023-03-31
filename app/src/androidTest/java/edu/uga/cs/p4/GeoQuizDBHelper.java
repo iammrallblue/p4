@@ -135,13 +135,13 @@ public class GeoQuizDBHelper extends SQLiteOpenHelper {
 
         // read the CSV file line by line
         BufferedReader br = new BufferedReader(isr);
-        String line = br.readLine(); // read the first line of the CSV file
+        String line; // read the first line of the CSV file
 
         while ((line = br.readLine()) != null) {
-            String[] columns = line.split(","); // split each line by comma
+            String[] columns = line.split(","); // get data split by comma
 
             // ** need to check order of columns in table
-            if (columns.length > 3) {
+            if (columns.length > 2) {
                 // extract the values from the columns
                 String country = columns[0].trim();
                 String continent = columns[1].trim();
