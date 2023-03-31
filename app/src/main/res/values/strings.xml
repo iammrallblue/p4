@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">p4</string>
+    <string name="database_and_tables_test">Database and tables test</string>
+    <string name="test">Test</string>
 </resources>
